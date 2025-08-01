@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    /* 고정 바 공통 스타일 */
+    .top_bar, .left_bar, .bottom_bar {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .top_bar {
+      background: red;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: 50px;
+    }
+
+    .left_bar {
+      background: purple;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      writing-mode: vertical-rl; /* 글자를 세로로 */
+      text-align: center; /* 가운데 정렬 */
+    }
+
+    .bottom_bar {
+      background: blue;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 50px;
+    }
+
+    /* 본문 내용 */
+    .container {
+      margin-top: 60px;   /* 상단 바와 겹치지 않게 */
+      margin-left: 60px;  /* 왼쪽 바와 겹치지 않게 */
+      margin-bottom: 60px; /* 하단 바와 겹치지 않게 */
+    }
+  </style>
+</head>
+<body>
+  <div class="top_bar">상단</div>
+  <div class="left_bar">왼쪽</div>
+  <div class="bottom_bar">하단</div>
+
+  <div class="container">
+    <h1>Fixed Bar Layout Example</h1>
+    <p>이 예제는 상단, 왼쪽, 하단에 고정된 바를 포함하고 있습니다.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  </div>
+</body>
+</html>

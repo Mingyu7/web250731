@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            width: 500px;
+            margin: 10px auto; /* 중앙 정렬 */
+
+        }
+        #middle{ overflow: hidden;} 
+        #left { float: left; width: 150px; background: red;}
+        #right { float: right; width: 150px; background: blue;}
+
+        #top { background:  green;}
+        #bottom { background: purple;}
+    </style>
+</head>
+<body>
+    <div id="top">상단입니다</div>
+    <div id="middle">
+        <div id="left">왼쪽입니다</div>
+        <div id="right">오른쪽입니다</div>
+    </div>
+    <div id="bottom">하단입니다</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        ul { 
+            overflow: hidden; /* ul 안에서 float된 li들이 밖으로 안넘치게 처리 */
+        }
+        li {
+            list-style: none; /* 기본 점 제거 */
+            float: left;      /* li들을 가로로 나열 */
+            padding: 15px;    /* 안쪽 여백 */
+        }
+        li:first-child { 
+            border-radius: 10px 0 0 10px; /* 첫번째 li의 좌상단, 좌하단 둥글게 */
+        }
+        li:last-child { 
+            border-radius: 0 10px 10px 0; /* 마지막 li의 우상단, 우하단 둥글게 */
+        }
+        li:nth-child(2n) { 
+            background-color: #f5e837; 
+        }
+        li:nth-child(2n+1) { 
+            background-color: #800000; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        
+        <li>항목 1</li>
+        <li>항목 2</li>
+        <li>항목 3</li>
+        <li>항목 4</li>
+        <li>항목 5</li>
+    </ul>
+    <hr>
+    <a href="#" style="text-decoration: none;">주의 사항</a><br> 
+    <a href="#" style="text-decoration: none;">주의 사항</a><br>
+    <a href="#" style="text-decoration: none;">주의 사항</a>
+</body>
+</html>
